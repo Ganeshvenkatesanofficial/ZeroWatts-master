@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <link
+      rel="shortcut icon"
+      href="/images/logo-1-80x80.png"
+      type="image/x-icon"
+    />
+    <meta name="description" content="A Learning Website" />
+
+    <title><%= title %></title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/icon-style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      .tabs {
+        width: 330px;
+        height: 120px;
+        font-size: 16px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* line-height: 1.2rem; */
+      }
+      .tabs h5{
+        font-size: 24px;
+      }
+      .roadmap-container {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        background-color: #000000;
+        /* background-image: url(/images/dark/pexels-luck-galindo-544268.jpg);
+        background-position: bottom; */
+        
+        /* background-image: linear-gradient(to right bottom, #9525cd, #5e65f2, #008cff, #00acff, #0dc6ff); */
+        width: 100%;
+      }
+      #navbar-menu {
+        background-image: linear-gradient(to bottom, #000000b0, #00000011);
+      }
+      .btn {
+        color: #ffffff !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        border: 1px solid white;
+      }
+      .page-bottom {
+        position: fixed;
+        width: 100%;
+        height: 200px;
+        bottom: 0;
+        background-image: linear-gradient(to top, #000000e3, #00000011, #00000000);
+      }
+      
+
+      .navigation-tab > div > p {
+        display: none;
+      }
+      .navigation-tab:hover > div > p {
+        border-color: #e9ecef #e9ecef #dee2e6;
+        display: block;
+      }
+      .footer4 {
+        box-shadow: inset 0px 150px 150px black;
+
+      }
+    </style>
+  </head>
+  <body class="vignette-inset">
+    <section class="menu menu2 cid-s8yBXevOaI" id="menu2-r">
+      <nav id="navbar-menu" class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-brand">
+            <span class="navbar-logo">
+              <a href="/">
+                <img
+                  src="/images/logo-1-80x80.png"
+                  alt="logo"
+                  style="height: 3rem"
+                />
+              </a>
+            </span>
+            <span class="navbar-caption-wrap"
+              ><a class="navbar-caption text-black display-7" href="/"
+                >&nbsp;</a
+              ></span
+            >
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+              <li class="nav-item">
+                <a class="link text-white display-4" href="/courses"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="link text-white display-4" href="/aboutus"
+                  >About</a
+                >
+              </li>
+            </ul>
+
+            <div class="navbar-buttons mbr-section-btn">
+              <a class="btn display-4" href="/">Login</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- <section class="engine"></section> -->
+    <section class="header5 mbr-fullscreen" id="header5-m">
+      <div class="container">
+        
+        <div class="row justify-content-end">
+          <div class="col-12 col-md-6 col-lg-3">
+            <img src="https://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png" alt="" srcset="">
+          </div>
+          <div class="col-12 col-lg-7 heading-content">
+            <h1
+              class="mbr-section-title mbr-fonts-style mbr-white mb-3 display-1"
+            >
+              <strong>Python</strong>
+            </h1>
+
+            <p class="mbr-text mbr-fonts-style mbr-white display-7">
+              An interpreted, high-level, general-purpose programming language.
+            </p>
+            <div class="mbr-section-btn mt-3">
+              <a class="btn btn-outline-warning display-7" href="/codearea"
+                >Start Coding!</a
+              >
+              <a
+                class="btn btn-warning-outline display-7"
+                id="learnMore"
+                href="#module"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="roadmap-container  py-4">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- <h2>ROADMAP</h2> -->
+          <ul id="tabs" class="nav nav-tabs">
+            <li class="nav-item"><a class="navigation-tab nav-link small text-capitalize active" data-target="#tab1" data-toggle="tab">
+              <div class="tabs" >
+                <h5 class="card-title align-center mbr-fonts-style display-7">
+                  <strong>Beginner</strong>
+                </h5>
+                <p>
+                  Includes Input and Output, Data types, Variables, data
+                  structures such as List, Tuple, Dictionary and Control
+                  statements.
+                </p>
+              </div>
+            </a></li>
+            <li class="nav-item"><a class="navigation-tab nav-link small text-capitalize" data-target="#tab2" data-toggle="tab">
+              <div class="tabs" >
+                <h5 class="card-title align-center mbr-fonts-style display-7">
+                  <strong>Intermediate</strong>
+                </h5>
+                <p>
+                  Includes OOPS concepts such as Class, Inheritence, Error
+                  handling techniques and File handling methods.
+                </p>
+              </div>
+            </a></li>
+            <li class="nav-item"><a class="navigation-tab nav-link small text-capitalize" data-target="#tab3" data-toggle="tab">
+              <div class="tabs" >
+                <h5 class="card-title align-center mbr-fonts-style display-7">
+                  <strong>Expert</strong>
+                </h5>
+                <p >
+                  Includes Library and Modules usage and creation.<br />And also
+                  base knowledge for Data science.
+                </p>
+              </div>
+            </a></li>
+          </ul>
+          
+          <div id="tabsContent" class="tab-content">
+            <div id="tab1" class="tab-pane fade active show">
+              <div class="row container d-flex justify-content-center">
+              
+                <%- include("partials/roadmap"); -%>
+
+              </div>
+            </div>
+            <div id="tab2" class="tab-pane fade">
+              <div class="row container d-flex justify-content-center">
+
+                <%- include("partials/roadmap"); -%>
+
+              </div>        
+            </div>
+            <div id="tab3" class="tab-pane fade">
+              <div class="row container d-flex justify-content-center">
+
+                <%- include("partials/roadmap"); -%>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="footer4 cid-s8yxqw7lY0" once="footers" id="footer4-q">
+      <div class="container">
+        <div class="row mbr-white">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="media-wrap">
+              <a href="/">
+                <img src="/images/logo-200x200.png" alt="logo" />
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
+              <strong>About</strong>
+            </h5>
+            <p class="mbr-text mbr-fonts-style mb-4 display-4">
+              ZeroWatts is a platform to learn and develop your coding skills.
+            </p>
+            <h5 class="mbr-section-subtitle mbr-fonts-style mb-3 display-7">
+              <strong>Follow Us</strong>
+            </h5>
+            <div class="social-row display-7">
+              <div class="soc-item">
+                <a href="#" target="_blank">
+                  <span class="mbr-iconfont socicon socicon-facebook"></span>
+                </a>
+              </div>
+              <div class="soc-item">
+                <a href="#" target="_blank">
+                  <span class="mbr-iconfont socicon socicon-twitter"></span>
+                </a>
+              </div>
+              <div class="soc-item">
+                <a href="#" target="_blank">
+                  <span class="mbr-iconfont socicon socicon-instagram"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
+              <strong>ZeroWatts Help</strong>
+            </h5>
+            <ul class="list mbr-fonts-style display-4">
+              <li class="mbr-text item-wrap">Help Center</li>
+              <li class="mbr-text item-wrap"><br /></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
+              <strong>Contact</strong>
+            </h5>
+            <ul class="list mbr-fonts-style display-4">
+              <li class="mbr-text item-wrap">9626244242</li>
+              <li class="mbr-text item-wrap">codersofzerowatts@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="page-bottom"></section> -->
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/scroller.js"></script>
+    <script src="/js/index.js"></script>
+    <script>
+      // $("nav").click(function(){
+      //   $("nav").removeClass('navbar-fixed-top');
+      // })
+    </script>
+  </body>
+</html>

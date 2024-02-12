@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <link rel="shortcut icon" href="/images/headlogo.png">
+      <script src="https://kit.fontawesome.com/150475fcb8.js" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Josefin Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="/css/styles/default.css">
+      <link rel="stylesheet" href="css/landing.css">
+      <title> <%= title %> </title>
+   </head>
+   <body>
+      <input type="checkbox" class="checkbox-0" id="forsignup" name="" value="" hidden>
+      <input type="checkbox" class="checkbox-1" id="forlogin" name="" value="" hidden>
+      <div class="container">
+         <div class="nav-wrapper">
+            <nav>
+               <div class="logo">
+                  <img src="/images/logo.png" alt="ZeroWatts">
+               </div>
+               <ul class="sign-ul">
+                  <label for="forlogin">
+                     <li class="login-list">
+                        <a class="login-link" style="cursor:pointer">Login</a>
+                     </li>
+                  </label>
+                  <label for="forsignup">
+                     <li class="login-list">
+                        <a  class="login-link" style="cursor:pointer">Signup</a>
+                     </li>
+                  </label>
+               </ul>
+            </nav>
+         </div>
+         <div class="sign-up-form">
+            <label for="forsignup">
+               <h1 style="float:right; margin-top:0;padding-right: 10px; cursor:pointer;"><i class="fas fa-times"></i></h1>
+            </label>
+            <h1 class="common-heading">Sign Up</h1>
+            <div class="sign-up-method">
+               <a href="#" class="sign-links fc">
+               <i class="fab fa-facebook"></i> signup with Facebook
+               </a>
+               <a href="#" class="sign-links gc">
+               <i class="fab fa-google"></i> Signup with Google
+               </a>
+               <h1 class="common-heading">Or</h1>
+               <form class="" action="index.html" method="post">
+                  <div class="name-wrapper">
+                     <input type="text" name="" value="" placeholder="firstname" class="nameinp">
+                     <input type="text" name="" value="" placeholder="lastname" class="nameinp">
+                  </div>
+                  <div class="other-wrapper">
+                     <input type="text" name="" value="" placeholder="Email" class="otherinp">
+                     <input type="text" name="" value="" placeholder="Password" class="otherinp">
+                  </div>
+                  <button type="button" name="button" class="signup-btn">Signup</button>
+               </form>
+            </div>
+         </div>
+         <div class="log-in-form">
+            <label for="forlogin">
+               <h1 style="float:right; margin-top:0; padding-right: 10px;cursor:pointer"><i class="fas fa-times"></i></h1>
+            </label>
+            <h1 class="common-heading">Login</h1>
+            <div class="sign-up-method">
+               <a href="#" class="sign-links fc">
+               <i class="fab fa-facebook"></i> Login with Facebook
+               </a>
+               <a href="#" class="sign-links gc">
+               <i class="fab fa-google"></i> Login with Google
+               </a>
+               <h1 class="common-heading">Or</h1>
+               <form class="" action="index.html" method="post">
+                  <div class="other-wrapper">
+                     <input type="text" name="" value="" placeholder="Username or Email" class="otherinp">
+                     <input type="text" name="" value="" placeholder="Password" class="otherinp">
+                  </div>
+                  <button type="button" name="button" class="signup-btn">Login</button>
+               </form>
+            </div>
+         </div>
+         <div class="main-wrapper">
+            <div class="contents">
+               <h1 class="content-heading">For Blooming Coders...</h1>
+               <p class="life">Life: Code Run Debug Deploy.</p>
+               <div class="align">
+                  <p class="content-paragraph"><span>S</span>tart to code today like a new baby entering into the earth.</p>
+                  <p class="content-paragraph"><span>R</span>un the code like the child running towards victory.</p>
+                  <P class="content-paragraph"><span>D</span>ebug the code like an adult learning from failure.
+                  <p class="content-paragraph"><span>D</span>eploy your code like the succeeded human.</p>
+                  </p>
+               </div>
+               <a href="/courses" class="startnow">Get Started</a>
+            </div>
+            <div class="wrp">
+               <img src="/images/svg.png" alt="">
+            </div>
+         </div>
+      </div>
+   </body>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+</html>
